@@ -22,40 +22,65 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(642, 54)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(55, 80)
+        Me.RichTextBox1.Location = New System.Drawing.Point(84, 239)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(310, 227)
+        Me.RichTextBox1.Size = New System.Drawing.Size(471, 416)
         Me.RichTextBox1.TabIndex = 1
         Me.RichTextBox1.Text = ""
         '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(84, 195)
+        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(6)
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(471, 32)
+        Me.NumericUpDown1.TabIndex = 3
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'RichTextBox2
+        '
+        Me.RichTextBox2.Enabled = False
+        Me.RichTextBox2.Location = New System.Drawing.Point(574, 239)
+        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.RichTextBox2.Size = New System.Drawing.Size(432, 416)
+        Me.RichTextBox2.TabIndex = 4
+        Me.RichTextBox2.Text = ""
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(833, 427)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1064, 681)
+        Me.Controls.Add(Me.RichTextBox2)
+        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "LottoLoser"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Button1 As Button
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents RichTextBox2 As RichTextBox
 End Class
